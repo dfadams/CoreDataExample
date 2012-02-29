@@ -1,0 +1,17 @@
+I have attempted to use the CoreDataExample as abase and create my own iPad Split View Project.
+
+Initially this will only contain a name but once I get the structure set up I will add further details.
+
+I have come across a few problems in trying to do this.
+
+1. When I enter a name in the Input View and press 'Done' I go back to the Master view but my new entry is not listed.  If I close the app and then reopen it is there.  I know this has something to do with the reload of the table but I just don't know where to put the code.
+
+2. When I select an entry in the Master Table view I would like this to display the details in the detail view, I have got this to work, but I would also like this to slide the Input view into place and for the selected entries information to be displayed for editing.
+
+3. On the Input view I have included a Label that I would like to populate with the date when the entry is first created.  I would also like this date to take the place of the ID that is listed in the Master view table.  This ID is not working properly and so I would like to remove it from the core data and replace it with a date stamp.
+
+Thanks to anyone that can help with the problems I am having and thanks to the guys that already contributed to the CoreDateExample that I have used to create so much of my iPad version.
+
+Cheers
+
+Daniel
