@@ -1,0 +1,520 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE028DBF14F66FF400F1E624 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = BE028DBE14F66FF400F1E624 /* Event.m */; };
+		BEA1C47914FCFD7200867DFE /* NSFetchedResultsController+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA1C47814FCFD7200867DFE /* NSFetchedResultsController+Util.m */; };
+		BEF6DDDA14F508510055F406 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF6DDD914F508510055F406 /* UIKit.framework */; };
+		BEF6DDDC14F508510055F406 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF6DDDB14F508510055F406 /* Foundation.framework */; };
+		BEF6DDDE14F508510055F406 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF6DDDD14F508510055F406 /* CoreGraphics.framework */; };
+		BEF6DDE014F508510055F406 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF6DDDF14F508510055F406 /* CoreData.framework */; };
+		BEF6DDE614F508510055F406 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BEF6DDE414F508510055F406 /* InfoPlist.strings */; };
+		BEF6DDE814F508510055F406 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF6DDE714F508510055F406 /* main.m */; };
+		BEF6DDEC14F508510055F406 /* InsurancePROAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF6DDEB14F508510055F406 /* InsurancePROAppDelegate.m */; };
+		BEF6DDEF14F508510055F406 /* Insurance_Needs_Calculator_PRO.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BEF6DDED14F508510055F406 /* Insurance_Needs_Calculator_PRO.xcdatamodeld */; };
+		BEF6DDF214F508510055F406 /* InsurancePROMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF6DDF114F508510055F406 /* InsurancePROMasterViewController.m */; };
+		BEF6DDF514F508510055F406 /* InsurancePRODetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF6DDF414F508510055F406 /* InsurancePRODetailViewController.m */; };
+		BEF6DDF814F508510055F406 /* InsurancePROMasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEF6DDF614F508510055F406 /* InsurancePROMasterViewController.xib */; };
+		BEF6DDFB14F508510055F406 /* InsurancePRODetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEF6DDF914F508510055F406 /* InsurancePRODetailViewController.xib */; };
+		BEF6DE0314F508510055F406 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF6DE0214F508510055F406 /* SenTestingKit.framework */; };
+		BEF6DE0414F508510055F406 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF6DDD914F508510055F406 /* UIKit.framework */; };
+		BEF6DE0514F508510055F406 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF6DDDB14F508510055F406 /* Foundation.framework */; };
+		BEF6DE0614F508510055F406 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF6DDDF14F508510055F406 /* CoreData.framework */; };
+		BEF6DE0E14F508510055F406 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BEF6DE0C14F508510055F406 /* InfoPlist.strings */; };
+		BEF6DE1114F508510055F406 /* Insurance_Needs_Calculator_PROTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF6DE1014F508510055F406 /* Insurance_Needs_Calculator_PROTests.m */; };
+		BEF6DE6E14F50C7B0055F406 /* Icon-PRO (Ins).png in Resources */ = {isa = PBXBuildFile; fileRef = BEF6DE6D14F50C7B0055F406 /* Icon-PRO (Ins).png */; };
+		BEF6DE7314F510740055F406 /* InsurancePROInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF6DE7114F510740055F406 /* InsurancePROInputViewController.m */; };
+		BEF6DE7414F510740055F406 /* InsurancePROInputViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEF6DE7214F510740055F406 /* InsurancePROInputViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BEF6DE0714F508510055F406 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEF6DDCC14F508500055F406 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEF6DDD414F508510055F406;
+			remoteInfo = "Insurance-Needs-Calculator-PRO";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BE028DBD14F66FF400F1E624 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		BE028DBE14F66FF400F1E624 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		BE91CE2314FBB54E006031F1 /* EventDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventDelegate.h; sourceTree = "<group>"; };
+		BEA1C46A14FCB73400867DFE /* NSFetchedResultsController+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFetchedResultsController+Util.h"; sourceTree = "<group>"; };
+		BEA1C47814FCFD7200867DFE /* NSFetchedResultsController+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFetchedResultsController+Util.m"; sourceTree = "<group>"; };
+		BEF6DDD514F508510055F406 /* Insurance-Needs-Calculator-PRO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Insurance-Needs-Calculator-PRO.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEF6DDD914F508510055F406 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BEF6DDDB14F508510055F406 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BEF6DDDD14F508510055F406 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BEF6DDDF14F508510055F406 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		BEF6DDE314F508510055F406 /* Insurance-Needs-Calculator-PRO-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Insurance-Needs-Calculator-PRO-Info.plist"; sourceTree = "<group>"; };
+		BEF6DDE514F508510055F406 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BEF6DDE714F508510055F406 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BEF6DDE914F508510055F406 /* Insurance-Needs-Calculator-PRO-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Insurance-Needs-Calculator-PRO-Prefix.pch"; sourceTree = "<group>"; };
+		BEF6DDEA14F508510055F406 /* InsurancePROAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InsurancePROAppDelegate.h; sourceTree = "<group>"; };
+		BEF6DDEB14F508510055F406 /* InsurancePROAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InsurancePROAppDelegate.m; sourceTree = "<group>"; };
+		BEF6DDEE14F508510055F406 /* Insurance_Needs_Calculator_PRO.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Insurance_Needs_Calculator_PRO.xcdatamodel; sourceTree = "<group>"; };
+		BEF6DDF014F508510055F406 /* InsurancePROMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InsurancePROMasterViewController.h; sourceTree = "<group>"; };
+		BEF6DDF114F508510055F406 /* InsurancePROMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InsurancePROMasterViewController.m; sourceTree = "<group>"; };
+		BEF6DDF314F508510055F406 /* InsurancePRODetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InsurancePRODetailViewController.h; sourceTree = "<group>"; };
+		BEF6DDF414F508510055F406 /* InsurancePRODetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InsurancePRODetailViewController.m; sourceTree = "<group>"; };
+		BEF6DDF714F508510055F406 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/InsurancePROMasterViewController.xib; sourceTree = "<group>"; };
+		BEF6DDFA14F508510055F406 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/InsurancePRODetailViewController.xib; sourceTree = "<group>"; };
+		BEF6DE0114F508510055F406 /* Insurance-Needs-Calculator-PROTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Insurance-Needs-Calculator-PROTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEF6DE0214F508510055F406 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		BEF6DE0B14F508510055F406 /* Insurance-Needs-Calculator-PROTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Insurance-Needs-Calculator-PROTests-Info.plist"; sourceTree = "<group>"; };
+		BEF6DE0D14F508510055F406 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BEF6DE0F14F508510055F406 /* Insurance_Needs_Calculator_PROTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Insurance_Needs_Calculator_PROTests.h; sourceTree = "<group>"; };
+		BEF6DE1014F508510055F406 /* Insurance_Needs_Calculator_PROTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Insurance_Needs_Calculator_PROTests.m; sourceTree = "<group>"; };
+		BEF6DE6D14F50C7B0055F406 /* Icon-PRO (Ins).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-PRO (Ins).png"; sourceTree = "<group>"; };
+		BEF6DE7014F510740055F406 /* InsurancePROInputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InsurancePROInputViewController.h; sourceTree = "<group>"; };
+		BEF6DE7114F510740055F406 /* InsurancePROInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InsurancePROInputViewController.m; sourceTree = "<group>"; };
+		BEF6DE7214F510740055F406 /* InsurancePROInputViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InsurancePROInputViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BEF6DDD214F508510055F406 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEF6DDDA14F508510055F406 /* UIKit.framework in Frameworks */,
+				BEF6DDDC14F508510055F406 /* Foundation.framework in Frameworks */,
+				BEF6DDDE14F508510055F406 /* CoreGraphics.framework in Frameworks */,
+				BEF6DDE014F508510055F406 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEF6DDFD14F508510055F406 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEF6DE0314F508510055F406 /* SenTestingKit.framework in Frameworks */,
+				BEF6DE0414F508510055F406 /* UIKit.framework in Frameworks */,
+				BEF6DE0514F508510055F406 /* Foundation.framework in Frameworks */,
+				BEF6DE0614F508510055F406 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BEF6DDCA14F508500055F406 = {
+			isa = PBXGroup;
+			children = (
+				BEF6DE6D14F50C7B0055F406 /* Icon-PRO (Ins).png */,
+				BEF6DDE114F508510055F406 /* Insurance-Needs-Calculator-PRO */,
+				BEF6DE0914F508510055F406 /* Insurance-Needs-Calculator-PROTests */,
+				BEF6DDD814F508510055F406 /* Frameworks */,
+				BEF6DDD614F508510055F406 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BEF6DDD614F508510055F406 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEF6DDD514F508510055F406 /* Insurance-Needs-Calculator-PRO.app */,
+				BEF6DE0114F508510055F406 /* Insurance-Needs-Calculator-PROTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BEF6DDD814F508510055F406 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEF6DDD914F508510055F406 /* UIKit.framework */,
+				BEF6DDDB14F508510055F406 /* Foundation.framework */,
+				BEF6DDDD14F508510055F406 /* CoreGraphics.framework */,
+				BEF6DDDF14F508510055F406 /* CoreData.framework */,
+				BEF6DE0214F508510055F406 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BEF6DDE114F508510055F406 /* Insurance-Needs-Calculator-PRO */ = {
+			isa = PBXGroup;
+			children = (
+				BEF6DDEA14F508510055F406 /* InsurancePROAppDelegate.h */,
+				BEF6DDEB14F508510055F406 /* InsurancePROAppDelegate.m */,
+				BEF6DDF014F508510055F406 /* InsurancePROMasterViewController.h */,
+				BEF6DDF114F508510055F406 /* InsurancePROMasterViewController.m */,
+				BEF6DDF314F508510055F406 /* InsurancePRODetailViewController.h */,
+				BEF6DDF414F508510055F406 /* InsurancePRODetailViewController.m */,
+				BEF6DE7014F510740055F406 /* InsurancePROInputViewController.h */,
+				BEF6DE7114F510740055F406 /* InsurancePROInputViewController.m */,
+				BEF6DDF614F508510055F406 /* InsurancePROMasterViewController.xib */,
+				BEF6DDF914F508510055F406 /* InsurancePRODetailViewController.xib */,
+				BEF6DE7214F510740055F406 /* InsurancePROInputViewController.xib */,
+				BEF6DDED14F508510055F406 /* Insurance_Needs_Calculator_PRO.xcdatamodeld */,
+				BEF6DDE214F508510055F406 /* Supporting Files */,
+				BE028DBD14F66FF400F1E624 /* Event.h */,
+				BE028DBE14F66FF400F1E624 /* Event.m */,
+				BE91CE2314FBB54E006031F1 /* EventDelegate.h */,
+				BEA1C46A14FCB73400867DFE /* NSFetchedResultsController+Util.h */,
+				BEA1C47814FCFD7200867DFE /* NSFetchedResultsController+Util.m */,
+			);
+			path = "Insurance-Needs-Calculator-PRO";
+			sourceTree = "<group>";
+		};
+		BEF6DDE214F508510055F406 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BEF6DDE314F508510055F406 /* Insurance-Needs-Calculator-PRO-Info.plist */,
+				BEF6DDE414F508510055F406 /* InfoPlist.strings */,
+				BEF6DDE714F508510055F406 /* main.m */,
+				BEF6DDE914F508510055F406 /* Insurance-Needs-Calculator-PRO-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BEF6DE0914F508510055F406 /* Insurance-Needs-Calculator-PROTests */ = {
+			isa = PBXGroup;
+			children = (
+				BEF6DE0F14F508510055F406 /* Insurance_Needs_Calculator_PROTests.h */,
+				BEF6DE1014F508510055F406 /* Insurance_Needs_Calculator_PROTests.m */,
+				BEF6DE0A14F508510055F406 /* Supporting Files */,
+			);
+			path = "Insurance-Needs-Calculator-PROTests";
+			sourceTree = "<group>";
+		};
+		BEF6DE0A14F508510055F406 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BEF6DE0B14F508510055F406 /* Insurance-Needs-Calculator-PROTests-Info.plist */,
+				BEF6DE0C14F508510055F406 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BEF6DDD414F508510055F406 /* Insurance-Needs-Calculator-PRO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEF6DE1414F508510055F406 /* Build configuration list for PBXNativeTarget "Insurance-Needs-Calculator-PRO" */;
+			buildPhases = (
+				BEF6DDD114F508510055F406 /* Sources */,
+				BEF6DDD214F508510055F406 /* Frameworks */,
+				BEF6DDD314F508510055F406 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Insurance-Needs-Calculator-PRO";
+			productName = "Insurance-Needs-Calculator-PRO";
+			productReference = BEF6DDD514F508510055F406 /* Insurance-Needs-Calculator-PRO.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BEF6DE0014F508510055F406 /* Insurance-Needs-Calculator-PROTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEF6DE1714F508510055F406 /* Build configuration list for PBXNativeTarget "Insurance-Needs-Calculator-PROTests" */;
+			buildPhases = (
+				BEF6DDFC14F508510055F406 /* Sources */,
+				BEF6DDFD14F508510055F406 /* Frameworks */,
+				BEF6DDFE14F508510055F406 /* Resources */,
+				BEF6DDFF14F508510055F406 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEF6DE0814F508510055F406 /* PBXTargetDependency */,
+			);
+			name = "Insurance-Needs-Calculator-PROTests";
+			productName = "Insurance-Needs-Calculator-PROTests";
+			productReference = BEF6DE0114F508510055F406 /* Insurance-Needs-Calculator-PROTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BEF6DDCC14F508500055F406 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "A+Apps";
+			};
+			buildConfigurationList = BEF6DDCF14F508500055F406 /* Build configuration list for PBXProject "Insurance-Needs-Calculator-PRO" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BEF6DDCA14F508500055F406;
+			productRefGroup = BEF6DDD614F508510055F406 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEF6DDD414F508510055F406 /* Insurance-Needs-Calculator-PRO */,
+				BEF6DE0014F508510055F406 /* Insurance-Needs-Calculator-PROTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BEF6DDD314F508510055F406 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEF6DDE614F508510055F406 /* InfoPlist.strings in Resources */,
+				BEF6DDF814F508510055F406 /* InsurancePROMasterViewController.xib in Resources */,
+				BEF6DDFB14F508510055F406 /* InsurancePRODetailViewController.xib in Resources */,
+				BEF6DE6E14F50C7B0055F406 /* Icon-PRO (Ins).png in Resources */,
+				BEF6DE7414F510740055F406 /* InsurancePROInputViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEF6DDFE14F508510055F406 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEF6DE0E14F508510055F406 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BEF6DDFF14F508510055F406 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BEF6DDD114F508510055F406 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEF6DDE814F508510055F406 /* main.m in Sources */,
+				BEF6DDEC14F508510055F406 /* InsurancePROAppDelegate.m in Sources */,
+				BEF6DDEF14F508510055F406 /* Insurance_Needs_Calculator_PRO.xcdatamodeld in Sources */,
+				BEF6DDF214F508510055F406 /* InsurancePROMasterViewController.m in Sources */,
+				BEF6DDF514F508510055F406 /* InsurancePRODetailViewController.m in Sources */,
+				BEF6DE7314F510740055F406 /* InsurancePROInputViewController.m in Sources */,
+				BE028DBF14F66FF400F1E624 /* Event.m in Sources */,
+				BEA1C47914FCFD7200867DFE /* NSFetchedResultsController+Util.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEF6DDFC14F508510055F406 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEF6DE1114F508510055F406 /* Insurance_Needs_Calculator_PROTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BEF6DE0814F508510055F406 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEF6DDD414F508510055F406 /* Insurance-Needs-Calculator-PRO */;
+			targetProxy = BEF6DE0714F508510055F406 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BEF6DDE414F508510055F406 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEF6DDE514F508510055F406 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BEF6DDF614F508510055F406 /* InsurancePROMasterViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEF6DDF714F508510055F406 /* en */,
+			);
+			name = InsurancePROMasterViewController.xib;
+			sourceTree = "<group>";
+		};
+		BEF6DDF914F508510055F406 /* InsurancePRODetailViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEF6DDFA14F508510055F406 /* en */,
+			);
+			name = InsurancePRODetailViewController.xib;
+			sourceTree = "<group>";
+		};
+		BEF6DE0C14F508510055F406 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEF6DE0D14F508510055F406 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BEF6DE1214F508510055F406 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		BEF6DE1314F508510055F406 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BEF6DE1514F508510055F406 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Insurance-Needs-Calculator-PRO/Insurance-Needs-Calculator-PRO-Prefix.pch";
+				INFOPLIST_FILE = "Insurance-Needs-Calculator-PRO/Insurance-Needs-Calculator-PRO-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BEF6DE1614F508510055F406 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Insurance-Needs-Calculator-PRO/Insurance-Needs-Calculator-PRO-Prefix.pch";
+				INFOPLIST_FILE = "Insurance-Needs-Calculator-PRO/Insurance-Needs-Calculator-PRO-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BEF6DE1814F508510055F406 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Insurance-Needs-Calculator-PRO.app/Insurance-Needs-Calculator-PRO";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Insurance-Needs-Calculator-PRO/Insurance-Needs-Calculator-PRO-Prefix.pch";
+				INFOPLIST_FILE = "Insurance-Needs-Calculator-PROTests/Insurance-Needs-Calculator-PROTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		BEF6DE1914F508510055F406 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Insurance-Needs-Calculator-PRO.app/Insurance-Needs-Calculator-PRO";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Insurance-Needs-Calculator-PRO/Insurance-Needs-Calculator-PRO-Prefix.pch";
+				INFOPLIST_FILE = "Insurance-Needs-Calculator-PROTests/Insurance-Needs-Calculator-PROTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BEF6DDCF14F508500055F406 /* Build configuration list for PBXProject "Insurance-Needs-Calculator-PRO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEF6DE1214F508510055F406 /* Debug */,
+				BEF6DE1314F508510055F406 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEF6DE1414F508510055F406 /* Build configuration list for PBXNativeTarget "Insurance-Needs-Calculator-PRO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEF6DE1514F508510055F406 /* Debug */,
+				BEF6DE1614F508510055F406 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEF6DE1714F508510055F406 /* Build configuration list for PBXNativeTarget "Insurance-Needs-Calculator-PROTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEF6DE1814F508510055F406 /* Debug */,
+				BEF6DE1914F508510055F406 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BEF6DDED14F508510055F406 /* Insurance_Needs_Calculator_PRO.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BEF6DDEE14F508510055F406 /* Insurance_Needs_Calculator_PRO.xcdatamodel */,
+			);
+			currentVersion = BEF6DDEE14F508510055F406 /* Insurance_Needs_Calculator_PRO.xcdatamodel */;
+			path = Insurance_Needs_Calculator_PRO.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BEF6DDCC14F508500055F406 /* Project object */;
+}
