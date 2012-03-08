@@ -1,32 +1,34 @@
 //
-//  InsurancePROInputViewController.m
+//  InsurancePROEditViewController.m
 //  Insurance-Needs-Calculator-PRO
 //
-//  Created by Daniel Adams on 22/02/12.
+//  Created by Daniel Adams on 5/03/12.
 //  Copyright (c) 2012 A+Apps. All rights reserved.
 //
 
-#import "InsurancePROInputViewController.h"
-#import "InsurancePROAppDelegate.h"
+#import "InsurancePROEditViewController.h"
 #import "Event.h"
 
-@interface InsurancePROInputViewController ()
+@interface InsurancePROEditViewController (private)
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
 - (void) save;
+//- (void) cancel;
 @end
 
-@implementation InsurancePROInputViewController
 
-@synthesize masterPopoverController = _masterPopoverController;
-@synthesize event, Label_ID, nameText;
+@implementation InsurancePROEditViewController
+
+//@synthesize masterPopoverController = _masterPopoverController;
+@synthesize Label_ID, nameText;
 @synthesize delegate;
+@synthesize event;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        self.title = NSLocalizedString(@"Input", @"Input");
+        self.title = NSLocalizedString(@"Edit", @"Edit");
     }
     return self;
 }
@@ -51,6 +53,14 @@
                                  action:@selector(save)];
     
     self.navigationItem.rightBarButtonItem = okButton;
+
+    {NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"dd-MM-yyyy"];
+    NSString *stringFromDate = [formatter stringFromDate:self.event.eventID];
+    
+    Label_ID.text = stringFromDate;
+    nameText.text = self.event.name;
+    }
 }
 
 - (void)viewDidUnload
@@ -86,6 +96,7 @@
     return YES;
 }
 
+#pragma mark - Private Methods
 
 -(void) save {
     
@@ -93,21 +104,21 @@
     self.event.eventID = [NSDate date];
     [self.delegate saveEvent];
     [self.navigationController popViewControllerAnimated:YES];
-
+    
 }
 
 #pragma mark - Split view
-    
+
 - (void)splitViewController:(UISplitViewController *)splitController willHideViewController:(UIViewController *)viewController withBarButtonItem:(UIBarButtonItem *)barButtonItem forPopoverController:(UIPopoverController *)popoverController {
     barButtonItem.title = NSLocalizedString(@"Scenario", @"Scenario");
     [self.navigationItem setLeftBarButtonItem:barButtonItem animated:YES];
     self.masterPopoverController = popoverController;
 }
-    
+
 - (void)splitViewController:(UISplitViewController *)splitController willShowViewController:(UIViewController *)viewController invalidatingBarButtonItem:(UIBarButtonItem *)barButtonItem {
     // Called when the view is shown again in the split view, invalidating the button and popover controller.
     [self.navigationItem setLeftBarButtonItem:nil animated:YES];
     self.masterPopoverController = nil;
 }
-    
+
 @end

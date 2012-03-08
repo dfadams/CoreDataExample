@@ -12,6 +12,10 @@
 
 #import "InsurancePRODetailViewController.h"
 
+#import "InsurancePROInputViewController.h"
+
+#import "InsurancePROEditViewController.h"
+
 #import "Event.h"
 
 @implementation InsurancePROAppDelegate
@@ -32,7 +36,7 @@
 
     InsurancePRODetailViewController *detailViewController = [[InsurancePRODetailViewController alloc] initWithNibName:@"InsurancePRODetailViewController" bundle:nil];
     UINavigationController *detailNavigationController = [[UINavigationController alloc] initWithRootViewController:detailViewController];
-
+    
     self.splitViewController = [[UISplitViewController alloc] init];
     self.splitViewController.delegate = detailViewController;
     self.splitViewController.viewControllers = [NSArray arrayWithObjects:masterNavigationController, detailNavigationController, nil];
@@ -142,6 +146,8 @@
     }
     
     NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"Insurance_Needs_Calculator_PRO.sqlite"];
+
+    NSLog(@"adasdas %@", storeURL.path);
     
     NSError *error = nil;
     __persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];

@@ -12,6 +12,7 @@
 
 @class InsurancePRODetailViewController;
 @class InsurancePROInputViewController;
+@class InsurancePROEditViewController;
 
 #import <CoreData/CoreData.h>
 
@@ -19,9 +20,13 @@
 
 @property (strong, nonatomic) InsurancePRODetailViewController *detailViewController;
 @property (strong, nonatomic) InsurancePROInputViewController *inputViewController;
+@property (strong, nonatomic) InsurancePROEditViewController *editViewController;
 
-@property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
-@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, retain) NSFetchedResultsController *fetchedResultsController;
+@property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic, retain) NSManagedObjectContext *addingManagedObjectContext;
+
+@property (nonatomic, strong) Event *event;
+@property (strong, nonatomic) id<EventDelegate> delegate;
 
 @end

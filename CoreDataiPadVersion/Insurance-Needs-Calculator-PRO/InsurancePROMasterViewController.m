@@ -7,15 +7,11 @@
 //
 
 #import "InsurancePROMasterViewController.h"
-
 #import "InsurancePRODetailViewController.h"
-
 #import "InsurancePROInputViewController.h"
-
+#import "InsurancePROEditViewController.h"
 #import "InsurancePROAppDelegate.h"
-
 #import "NSFetchedResultsController+Util.h"
-
 #import "Event.h"
 
 @interface InsurancePROMasterViewController ()
@@ -27,9 +23,11 @@
 
 @synthesize detailViewController = _detailViewController;
 @synthesize inputViewController = _inputViewController;
+@synthesize editViewController = _editViewController;
 @synthesize fetchedResultsController = __fetchedResultsController;
 @synthesize managedObjectContext = __managedObjectContext;
 @synthesize addingManagedObjectContext;
+@synthesize event, delegate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -83,7 +81,6 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    [self.tableView reloadData];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -127,11 +124,12 @@
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
 
-    Event *event = [__fetchedResultsController objectAtIndexPath:indexPath];
+    event = [__fetchedResultsController objectAtIndexPath:indexPath];
     cell.textLabel.text = event.name;
-    NSString *ID;
-    ID = [NSString stringWithFormat:@"%i", event.eventID];
-    cell.detailTextLabel.text = ID;
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"dd-MM-yyyy HH:mm"];
+    NSString *stringFromDate = [formatter stringFromDate:event.eventID];
+    cell.detailTextLabel.text = stringFromDate;
 }
 
 #pragma mark - Table view delegate
@@ -166,19 +164,19 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSManagedObject *selectedObject = [[self fetchedResultsController] objectAtIndexPath:indexPath];
-    self.detailViewController.detailItem = selectedObject;    
+    self.detailViewController.detailItem = selectedObject;
 
-    if (!self.inputViewController) {
-        self.inputViewController = [[InsurancePROInputViewController alloc] initWithNibName:@"InsurancePROInputViewController" bundle:nil];
+    if (!self.editViewController) {
+        self.editViewController = [[InsurancePROEditViewController alloc] initWithNibName:@"InsurancePROEditViewController" bundle:nil];
     }
 
-    Event *event = [__fetchedResultsController objectAtIndexPath:indexPath];
-    _detailViewController.event = event;
-    _detailViewController.delegate = self;
-    self.inputViewController.isEditMode = YES;
-    [self.navigationController pushViewController:self.inputViewController animated:YES];
+    InsurancePROEditViewController *edit = [[InsurancePROEditViewController alloc] init];
+    event = [__fetchedResultsController objectAtIndexPath:indexPath];
+    edit.event = event;
+    edit.delegate = self;
+    [self.navigationController pushViewController:edit animated:YES];
 }
-
+    
 - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
     // The table view should not be re-orderable.
     return NO;
@@ -194,7 +192,7 @@
 	
 	[addingManagedObjectContext setPersistentStoreCoordinator:[[__fetchedResultsController managedObjectContext] persistentStoreCoordinator]];
     
-	Event *event = (Event *)[NSEntityDescription insertNewObjectForEntityForName:@"Event" inManagedObjectContext:addingContext];
+	event = (Event *)[NSEntityDescription insertNewObjectForEntityForName:@"Event" inManagedObjectContext:addingContext];
 	
     InsurancePROInputViewController *input = [[InsurancePROInputViewController alloc] init];
     input.delegate = self;
@@ -262,8 +260,9 @@
     // Edit the section name key path and cache name if appropriate.
     // nil for section name key path means "no sections".
     NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:__managedObjectContext sectionNameKeyPath:@"name" cacheName:@"Master"];
-    aFetchedResultsController.delegate = self;
+
     self.fetchedResultsController = aFetchedResultsController;
+    //aFetchedResultsController.delegate = self;
     __fetchedResultsController.delegate = self;
     
 	NSError *error = nil;

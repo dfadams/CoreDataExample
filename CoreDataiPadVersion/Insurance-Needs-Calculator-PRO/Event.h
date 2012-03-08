@@ -12,7 +12,7 @@
 
 @interface Event : NSManagedObject
 
-@property (nonatomic, retain) NSNumber * eventID;
+@property (nonatomic, retain) NSDate * eventID;
 @property (nonatomic, retain) NSString * name;
 
 @end

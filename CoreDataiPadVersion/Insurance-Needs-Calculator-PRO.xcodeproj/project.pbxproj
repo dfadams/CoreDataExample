@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		BE028DBF14F66FF400F1E624 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = BE028DBE14F66FF400F1E624 /* Event.m */; };
 		BEA1C47914FCFD7200867DFE /* NSFetchedResultsController+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA1C47814FCFD7200867DFE /* NSFetchedResultsController+Util.m */; };
+		BEE0C3721504D6C300E58AEC /* InsurancePROEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE0C3701504D6C300E58AEC /* InsurancePROEditViewController.m */; };
+		BEE0C3731504D6C300E58AEC /* InsurancePROEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEE0C3711504D6C300E58AEC /* InsurancePROEditViewController.xib */; };
 		BEF6DDDA14F508510055F406 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF6DDD914F508510055F406 /* UIKit.framework */; };
 		BEF6DDDC14F508510055F406 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF6DDDB14F508510055F406 /* Foundation.framework */; };
 		BEF6DDDE14F508510055F406 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF6DDDD14F508510055F406 /* CoreGraphics.framework */; };
@@ -48,6 +50,9 @@
 		BE91CE2314FBB54E006031F1 /* EventDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventDelegate.h; sourceTree = "<group>"; };
 		BEA1C46A14FCB73400867DFE /* NSFetchedResultsController+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFetchedResultsController+Util.h"; sourceTree = "<group>"; };
 		BEA1C47814FCFD7200867DFE /* NSFetchedResultsController+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFetchedResultsController+Util.m"; sourceTree = "<group>"; };
+		BEE0C36F1504D6C300E58AEC /* InsurancePROEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InsurancePROEditViewController.h; sourceTree = "<group>"; };
+		BEE0C3701504D6C300E58AEC /* InsurancePROEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InsurancePROEditViewController.m; sourceTree = "<group>"; };
+		BEE0C3711504D6C300E58AEC /* InsurancePROEditViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InsurancePROEditViewController.xib; sourceTree = "<group>"; };
 		BEF6DDD514F508510055F406 /* Insurance-Needs-Calculator-PRO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Insurance-Needs-Calculator-PRO.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEF6DDD914F508510055F406 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BEF6DDDB14F508510055F406 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -147,9 +152,12 @@
 				BEF6DDF414F508510055F406 /* InsurancePRODetailViewController.m */,
 				BEF6DE7014F510740055F406 /* InsurancePROInputViewController.h */,
 				BEF6DE7114F510740055F406 /* InsurancePROInputViewController.m */,
+				BEE0C36F1504D6C300E58AEC /* InsurancePROEditViewController.h */,
+				BEE0C3701504D6C300E58AEC /* InsurancePROEditViewController.m */,
 				BEF6DDF614F508510055F406 /* InsurancePROMasterViewController.xib */,
 				BEF6DDF914F508510055F406 /* InsurancePRODetailViewController.xib */,
 				BEF6DE7214F510740055F406 /* InsurancePROInputViewController.xib */,
+				BEE0C3711504D6C300E58AEC /* InsurancePROEditViewController.xib */,
 				BEF6DDED14F508510055F406 /* Insurance_Needs_Calculator_PRO.xcdatamodeld */,
 				BEF6DDE214F508510055F406 /* Supporting Files */,
 				BE028DBD14F66FF400F1E624 /* Event.h */,
@@ -267,6 +275,7 @@
 				BEF6DDFB14F508510055F406 /* InsurancePRODetailViewController.xib in Resources */,
 				BEF6DE6E14F50C7B0055F406 /* Icon-PRO (Ins).png in Resources */,
 				BEF6DE7414F510740055F406 /* InsurancePROInputViewController.xib in Resources */,
+				BEE0C3731504D6C300E58AEC /* InsurancePROEditViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +318,7 @@
 				BEF6DE7314F510740055F406 /* InsurancePROInputViewController.m in Sources */,
 				BE028DBF14F66FF400F1E624 /* Event.m in Sources */,
 				BEA1C47914FCFD7200867DFE /* NSFetchedResultsController+Util.m in Sources */,
+				BEE0C3721504D6C300E58AEC /* InsurancePROEditViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
