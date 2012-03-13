@@ -7,9 +7,10 @@
 //
 
 #import "InsurancePROEditViewController.h"
+#import "InsurancePROAppDelegate.h"
 #import "Event.h"
 
-@interface InsurancePROEditViewController (private)
+@interface InsurancePROEditViewController ()
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
 - (void) save;
 //- (void) cancel;
@@ -18,8 +19,9 @@
 
 @implementation InsurancePROEditViewController
 
-//@synthesize masterPopoverController = _masterPopoverController;
+@synthesize masterPopoverController = _masterPopoverController;
 @synthesize Label_ID, nameText;
+@synthesize managedObjectContext = _managedObjectContext;
 @synthesize delegate;
 @synthesize event;
 
@@ -96,13 +98,18 @@
     return YES;
 }
 
-#pragma mark - Private Methods
 
 -(void) save {
     
-    self.event.name = self.nameText.text;
-    self.event.eventID = [NSDate date];
-    [self.delegate saveEvent];
+    NSManagedObjectContext *context = self.event.managedObjectContext;
+    
+    self.event.name = nameText.text;
+
+    NSError *error;
+    if (![context save:&error]) {
+        NSLog(@"Whoops, couldn't update: %@", [error localizedDescription]);
+    }
+    
     [self.navigationController popViewControllerAnimated:YES];
     
 }

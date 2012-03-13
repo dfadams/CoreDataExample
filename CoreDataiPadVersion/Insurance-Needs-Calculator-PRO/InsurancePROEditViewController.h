@@ -14,6 +14,7 @@
 
 @property (strong, nonatomic) Event *event;
 @property (strong, nonatomic) id<EventDelegate> delegate;
+@property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic, strong) IBOutlet UILabel *Label_ID;
 @property (nonatomic, strong) IBOutlet UITextField *nameText;
 

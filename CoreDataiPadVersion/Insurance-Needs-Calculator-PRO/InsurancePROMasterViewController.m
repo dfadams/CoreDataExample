@@ -330,6 +330,14 @@
     [self.tableView endUpdates];
 }
 
+- (void)addControllerContextDidSave:(NSNotification*)saveNotification {
+	
+	NSManagedObjectContext *context = [__fetchedResultsController managedObjectContext];
+	// Merging chang¡es causes the fetched results controller to update its results
+	[context mergeChangesFromContextDidSaveNotification:saveNotification];	
+}
+
+
 /*
 // Implementing the above methods to update the table view in response to individual changes may have performance implications if a large number of changes are made simultaneously. If this proves to be an issue, you can instead just implement controllerDidChangeContent: which notifies the delegate that all section and object changes have been processed. 
  
